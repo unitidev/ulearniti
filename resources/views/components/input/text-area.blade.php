@@ -1,0 +1,3 @@
+<div >
+    <textarea {{ $attributes->only('class')->merge(['class' => 'relative w-full font-robo text-darker placeholder-light dark:placeholder-dark dark:text-lighter rounded-md bg-white dark:bg-darker-2 border border-lighter dark:border-darkest hover:border-light dark:hover:border-dark focus:border-lightest dark:focus:border-primary focus:ring-0 focus:shadow-md transition duration-300 text-sm']) }} placeholder="{{ $placeholder }}" {{ $attributes->except('class') }}></textarea>
+</div>

@@ -1,0 +1,4 @@
+<div {{ $attributes->only('class')->merge(['class' => 'relative w-full']) }}>
+    <input type="{{ $type }}" class="w-full h-16 pt-5 font-robo text-darker dark:text-lighter rounded-xl bg-white dark:bg-darker-2 border border-lighter dark:border-darkest hover:border-light dark:hover:border-dark focus:border-lightest dark:focus:border-primary focus:ring-0 focus:shadow-md transition duration-300" {{ $attributes->except('class') }}>
+    <div class="absolute top-0 pl-3 pt-2 text-darker dark:text-dark focused-sibling:text-light dark:focused-sibling:text-light text-xs font-robo font-medium transition duration-300">{{ $label }}</div>
+</div>

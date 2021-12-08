@@ -1,0 +1,5 @@
+<div {{ $attributes->only('class')->merge(['class' => 'relative w-full focus-within:text-primary text-lighter dark:text-dark dark:focus-within:text-primary']) }}>
+    <div class="absolute top-0 w-16 h-16 flex items-center justify-center text-2xl transition duration-300"><i class="{{ $icon }}"></i></div>
+    <input type="{{ $type }}" class="pl-16 w-full h-16 pt-5 font-robo text-darker dark:text-lighter rounded-xl bg-white dark:bg-darker-2 border border-lighter dark:border-darkest hover:border-light dark:hover:border-dark focus:border-lightest dark:focus:border-primary focus:ring-0 focus:shadow-md transition duration-300" {{ $attributes->except('class') }}>
+    <div class="absolute top-0 pl-16 pt-2 text-darker dark:text-dark focused-sibling:text-light dark:focused-sibling:text-light text-xs font-robo font-medium transition duration-300">{{ $label }}</div>
+</div>

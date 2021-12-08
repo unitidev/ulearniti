@@ -1,0 +1,51 @@
+@layer base {
+    h1 {
+      @apply font-mont font-bold;
+    }
+    ul {
+      @apply list-disc ml-8;
+    }
+    ol {
+        @apply list-decimal ml-8;
+      }
+    img {
+        display: none;
+    }
+    img[src] {
+       display: block;
+     }
+    :root {
+      --plyr-color-main: #29afc7;
+    }
+    
+    body {
+      margin: 0;
+    }
+    
+    .plyr {
+      height: 100%;
+      width :100%;
+      @apply rounded-xl;
+      background: #0000;
+    }
+    
+    #wrapper{
+      display: flex;
+      justify-content:center;
+      width: 100%;
+      background-color: green;
+    }
+    
+    .plyr__video-wrapper {
+      position: relative;
+      padding-bottom: 56.25%;
+    }
+    
+    .plyr__video-wrapper iframe {
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      top: 0;
+      left: 0;
+    }
+  }

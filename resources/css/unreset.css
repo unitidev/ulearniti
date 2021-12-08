@@ -1,0 +1,21 @@
+.unreset h1 {
+    @apply font-bold my-2;
+  }
+  .unreset ul,
+  .unreset menu {
+    @apply list-disc my-1 pl-10;
+  }
+  .unreset ol {
+    @apply list-decimal my-1 pl-10;
+  }
+  .unreset ul ul,
+  .unreset ol ul {
+    list-style-type: circle;
+  }
+  .unreset ul ul ul,
+  .unreset ul ol ul,
+  .unreset ol ul ul,
+  .unreset ol ol ul {
+    list-style-type: square;
+  }
+  
